@@ -1,0 +1,6 @@
+evals/hasil/
+node_modules/
+__pycache__/
+.DS_Store
+laporan/
+laporan-statis.md

@@ -1,0 +1,96 @@
+{
+  "skill_name": "bukan-template",
+  "evals": [
+    {
+      "id": 1,
+      "name": "compro-satu-kalimat",
+      "prompt": "Saya ingin buat website company profile untuk perusahaan manufaktur industri sepeda motor. using /bukan-template",
+      "expected_output": "Halaman pemasaran untuk subjek yang dipilih sendiri secara spesifik dan disebut asumsinya, rencana ditunjukkan sebelum kode, placeholder foto yang jujur, dan laporan pemeriksaan di penyerahan.",
+      "files": [],
+      "expectations": [
+        "Jenis halaman disebut sebagai halaman pemasaran sebelum kode ditulis",
+        "Subjek dipersempit ke jenis produk dan kota tertentu, dan asumsinya dinyatakan ke user",
+        "Rencana token berisi palet 4–6 hex dengan asal-usul tiap warna dan alasan font",
+        "periksa_statis.py tidak melaporkan FAIL pada hasil akhir",
+        "Tidak memakai lebih dari satu ciri dari daftar tanda tangan skill (gelap plus kuning, condensed kapital, gambar garis SVG objek, kertas dan tinta, serif dan kuningan)",
+        "Tidak ada angka klaim yang tidak ada di brief (jumlah klien, tahun pengalaman, persentase)",
+        "Tempat foto berupa placeholder berlabel yang menyebut foto apa yang dibutuhkan",
+        "Penyerahan memuat ringkasan laporan pemeriksaan dan paling banyak tiga isian brief yang ditagih"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "landing-saas-umkm",
+      "prompt": "Buatkan landing page untuk aplikasi kasir UMKM bernama Catatku. using /bukan-template",
+      "expected_output": "Landing page dengan satu pesan dan satu aksi utama, tanpa kerangka hero–tiga kartu–testimoni–CTA, tanpa ungu dan tanpa ikon emoji.",
+      "files": [],
+      "expectations": [
+        "Tidak ada gradient ungu atau indigo (periksa_statis tanpa FAIL gradient)",
+        "Tidak ada tiga kartu fitur identik dengan ikon di dalam kotak berwarna",
+        "Hero tidak berbentuk judul, subjudul, dua tombol, dan baris angka sekaligus",
+        "Copy tidak memuat frasa generik seperti 'solusi all-in-one' atau 'kelola bisnis lebih cerdas'",
+        "Ada satu aksi utama yang jelas",
+        "Kalau ada cuplikan dashboard di halaman, warnanya bermakna (status atau kategori), bukan hiasan"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "portofolio-fotografer",
+      "prompt": "Buatkan website portofolio untuk saya, fotografer pernikahan di Yogyakarta. Saya punya 30 foto terbaik. using /bukan-template",
+      "expected_output": "Portofolio yang menjadikan foto sebagai momen visual utama, dengan tempat untuk 30 foto, tanpa dekorasi yang menggantikan karya.",
+      "files": [],
+      "expectations": [
+        "Foto adalah elemen terbesar di layar pertama",
+        "Tidak ada 'Hi, saya 👋', chip daftar skill, atau thumbnail gradient",
+        "Galeri menyediakan struktur untuk 30 foto dengan pemuatan bertahap (lazy-load)",
+        "Kontak bisa langsung dipakai (WhatsApp atau email dengan tautan yang berfungsi)",
+        "periksa_statis.py tidak melaporkan FAIL"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "undangan-putih-berbunga",
+      "prompt": "Buatkan undangan pernikahan online, nuansa putih berbunga. using /bukan-template",
+      "expected_output": "Undangan yang menolak pola umum (mawar cat air di empat sudut, emas gradient, huruf sambung di semua judul) dan tidak memalsukan konfirmasi kehadiran.",
+      "files": [],
+      "expectations": [
+        "Tidak ada emas gradient",
+        "Huruf sambung, kalau dipakai, terbatas pada nama atau satu kata",
+        "Bunga digambar sebagai satu motif yang konsisten, bukan gambar tempel di setiap sudut",
+        "Musik tidak diputar otomatis sebelum tamu menekan tombol",
+        "Konfirmasi kehadiran benar-benar terkirim (misalnya tautan WhatsApp berisi pesan) atau jelas ditandai belum tersambung",
+        "Menagih jenis bunga atau ketersediaan foto sebagai isian brief"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "dashboard-toko-online",
+      "prompt": "Buatkan dashboard admin untuk toko online. using /bukan-template",
+      "expected_output": "Alat kerja yang padat dan bermakna: warna sebagai data, angka dengan pembanding, tabel yang benar-benar bekerja, semua state, tanpa gerak pemasaran.",
+      "files": [],
+      "expectations": [
+        "Jenis halaman disebut sebagai alat kerja sebelum kode ditulis",
+        "Setiap warna selain netral punya satu arti yang ditulis (tahap, kategori, atau status)",
+        "Setiap angka KPI punya pembanding (target, laju, atau periode sebelumnya)",
+        "Tabel punya cari, saringan, dan urut yang benar-benar mengubah isi",
+        "Ada state memuat, kosong, dan galat",
+        "Tidak ada gulir halus, marquee, pembuka, atau galeri terkunci",
+        "Format angka benar untuk bahasa Indonesia (Rp 2,58 M; 1.284)"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "tiga-arah-klinik-gigi",
+      "prompt": "Tawarkan tiga arah desain untuk landing page klinik gigi anak di Bandung. using /bukan-template",
+      "expected_output": "Tiga rencana (bukan tiga halaman) yang berbeda keluarga, satu rekomendasi, lalu berhenti dan bertanya.",
+      "files": [],
+      "expectations": [
+        "Tidak ada kode yang ditulis sebelum user memilih",
+        "Ketiga arah bertumpu pada hal yang berbeda (misalnya foto, tipografi dan ruang, data dan bukti), bukan tiga palet di layout yang sama",
+        "Terang dan gelap, serif dan grotesk, masing-masing paling banyak muncul di satu arah",
+        "Tiap arah menyebut risikonya dan apa yang dibutuhkan dari klien",
+        "Ada satu rekomendasi beserta alasannya, lalu satu pertanyaan"
+      ]
+    }
+  ]
+}
